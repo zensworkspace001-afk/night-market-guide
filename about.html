@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>關於本站｜台灣夜市小吃圖鑑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="index.html">🏮 夜市<span>圖鑑</span></a>
+      <nav><a href="index.html">圖鑑</a><a href="about.html">關於</a></nav>
+    </header>
+
+    <section class="hero">
+      <span class="emoji">📖</span>
+      <h1>關於本站</h1>
+    </section>
+
+    <article>
+      <h2>這是什麼網站？</h2>
+      <p>「台灣夜市小吃圖鑑」用一張張圖鑑卡介紹台灣夜市常見的小吃，適合第一次逛夜市的朋友快速認識每道小吃的特色、價格與吃法。</p>
+
+      <h2>怎麼做出來的？</h2>
+      <p>本站是一個「AI 協作」實驗：專案根目錄的 <code>CLAUDE.md</code> 寫好了網站的風格、檔案結構、頁面格式與新增流程。之後只要對 AI 說「新增一道 XXX」，AI 就能依照同一套規則產生新頁面，風格與結構保持一致。</p>
+
+      <h2>新增一道小吃的流程</h2>
+      <ul>
+        <li>複製 <code>snacks/_template.html</code>，填入固定的六個區塊。</li>
+        <li>在 <code>data/snacks.js</code> 登記一筆資料。</li>
+        <li>首頁卡片、搜尋與分類篩選會自動更新。</li>
+      </ul>
+    </article>
+
+    <footer>台灣夜市小吃圖鑑 · 依 CLAUDE.md 規則由 AI 協作維護</footer>
+  </div>
+</body>
+</html>
